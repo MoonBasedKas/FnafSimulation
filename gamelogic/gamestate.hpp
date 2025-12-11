@@ -8,9 +8,12 @@
 class GameState {
     public:
         void startGame();
+        void endGame();
     private:
+        bool over;
         unsigned int tick = 0;
         unsigned int maxTicks;
+        double power;
         GameState *state;
         std::vector<Animatronic *> animatronics;
 

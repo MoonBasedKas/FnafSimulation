@@ -20,3 +20,12 @@ void Room::leave(int id){
         }
     }
 }
+
+/**
+ * @brief Returns the current animatronics that are in the room.
+ * 
+ * @return std::vector<Animatronic *> 
+ */
+std::vector<Animatronic *> Room::ViewRoom(){
+    return animatronics;
+}
